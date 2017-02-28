@@ -15,6 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Congroo
 email: kycfeel@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Copyright 2017. kycfeel all rights reserved.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kycfeel
