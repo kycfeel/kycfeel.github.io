@@ -12,8 +12,8 @@ OpenStack & Linux
 
 Jekyll과 GitHub 페이지
 ========================
-[GitHub에 개인 페이지 만들기](https://)
+[GitHub에 개인 페이지 만들기](https://kycfeel.github.io/jekyll과/github/페이지/2017/03/01/GitHub에-개인-페이지-만들기.html)
 
 개인적인 이야기
 ========================
-[GitHub 페이지를 오픈한 이유](https://kycfeel.github.io/잡담/2017/02/28/Github-페이지를-오픈한-이유.html)
+[GitHub 페이지를 오픈한 이유](https://kycfeel.github.io/개인적인_이야기/2017/02/28/Github-페이지를-오픈한-이유.html)
