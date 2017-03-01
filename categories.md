@@ -4,11 +4,11 @@ title: Categories
 permalink: /categories/
 ---
 
-OpenStack 클라우드 구축
+OpenStack & Linux
 ========================
 [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/03/01/RDO로-간편하게-OpenStack-설치하기.html)
 
-[Gluu로 OpenStack에 OpenID SSO 연결하기](https://)
+[Gluu로 OpenStack에 OpenID SSO 연결하기]
 
 Jekyll과 GitHub 페이지
 ========================
