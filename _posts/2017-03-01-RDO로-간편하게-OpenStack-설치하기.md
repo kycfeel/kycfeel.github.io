@@ -14,8 +14,6 @@ categories: OpenStack & Linux
 * Compute Node 2대 - SSD Software RAID 5 구성
 * CentOS 7.x 설치됨
 
-> ![인프라 구성도](https://gitlab.com/geekstack_io/openstack-infrastructure/blob/master/deploy/_images/infrastructure.png)
-
 RDO-Project
 ========================
 
@@ -61,7 +59,7 @@ RAID 구성된 깨끗한 CentOS 서버들이 준비되었다면, 아래 과정�
 
 방금 생성한 스크립트 파일에 들어가, 아래의 값들을 다음과 같이 수정한다.
 
-{{{
+  ```
   CONFIG_KEYSTONE_API_VERSION=v3 // v2.0을 사용해도 되나, 추후 여러가지 범용성을 위해 v3 선택.
 
   CONFIG_PROVISION_DEMO=n
@@ -77,8 +75,7 @@ RAID 구성된 깨끗한 CentOS 서버들이 준비되었다면, 아래 과정�
   CONFIG_COMPUTE_HOSTS=IP 주소 // Compute 노드가 될 서버의 아이피
 
   CONFIG_NETWORK_HOSTS=IP 주소 // Network 노드가 될 서버의 아이피
-
-}}}
+  ```
 
 > [스크립트를 실행하기 전, 설치되는 장비간 ssh 키를 공유해두면 설치 과정 내내 비밀번호를 반복 입력하지 않아도 된다.](https://www.rdoproject.org/documentation/enabling-migrations/)
 
