@@ -8,8 +8,6 @@ OpenStack & Linux
 ========================
 [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/openstack/&/linux/2017/03/01/RDO로-간편하게-OpenStack-설치하기.html)
 
-[Gluu로 OpenStack에 OpenID SSO 연결하기]
-
 Jekyll과 GitHub 페이지
 ========================
 [GitHub에 개인 페이지 만들기](https://kycfeel.github.io/jekyll과/github/페이지/2017/03/01/GitHub에-개인-페이지-만들기.html)
