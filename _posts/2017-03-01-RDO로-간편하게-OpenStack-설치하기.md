@@ -78,13 +78,6 @@ RAID 구성된 깨끗한 CentOS 서버들이 준비되었다면, 아래 과정�
   CONFIG_NETWORK_HOSTS=IP 주소 // Network 노드가 될 서버의 아이피
   ```
 
-  ```
-  fucntion testing() {
-    alert("Hello");
-  }
-  testing();
-  ```
-
 > [스크립트를 실행하기 전, 설치되는 장비간 ssh 키를 공유해두면 설치 과정 내내 비밀번호를 반복 입력하지 않아도 된다.](https://www.rdoproject.org/documentation/enabling-migrations/)
 
 > 위의 키 공유 과정을 거치면, 추후 Compute 노드간 인스턴스 마이그레이션이 가능해진다. 여러모로 필요하니 설정 추천.
