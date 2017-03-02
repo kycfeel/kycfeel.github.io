@@ -34,6 +34,6 @@ Google에서는 [Analytics](https://www.google.com/analytics/) 라는 강력한 
     </script>
   ```
 
-이제 같은 폴더 안의 `head.html`에서 호출만 하면 된다. Jekyll은 표준 [Liquid](https://github.com/Shopify/liquid) 문법을 모두 지원원하니 `head.html` 파일의 `<head>` 태그 안 어디나 `include google_analytics.html` 블록 (코드의 앞 뒤를 `{%`와 `%}` 으로 감싸줘라. 코드를 그대로 넣으니 Markdown이 그걸 읽어버려서 정상적인 출력이 안된다. 방법을 알아내면 수정하겠다.)을 집어넣어주면 작업 끝.
+이제 같은 폴더 안의 `head.html`에서 호출만 하면 된다. Jekyll은 표준 [Liquid](https://github.com/Shopify/liquid) 문법을 모두 지원원하니 `head.html` 파일의 `<head>` 태그 안 어디나 `include google_analytics.html` 블록 (코드에 블록 처리는 해줘야 한다. 원본 코드를 그대로 글에 넣으니 Markdown이 그걸 읽어버려서 죽어도 정상적인 출력이 안된다. 방법을 알아내면 수정하겠다. 당장 이해가 안된다면 [여기](http://stackoverflow.com/questions/17207458/how-to-add-google-analytics-tracking-id-to-github-pages) 참조.)을 집어넣어주면 작업 끝. 
 
 이제 GitHub에 Push하고 며칠 뒤 다시 Google Analytics를 확인해보자. 방문자 통계가 제대로 찍혀 있을 거다. 혹시 Analytics가 제대로 작동하는 것 같지 않다면 [Google Tag Assistant](https://get.google.com/tagassistant/?utm_source=google.com&utm_medium=notif_referral&utm_campaign=TRAFFIC_ANALYSIS_RECOMMENDATION) 를 사용해보자. 간단한 Chrome 에드온인데 내 사이트에서 Analytics가 제대로 작동 중인지 실시간으로 확인할 수 있는 듯 하다.
