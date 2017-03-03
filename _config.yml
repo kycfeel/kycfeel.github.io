@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Congroo
 author: kycfeel
-description: Minimal, responsive Jekyll theme for hackers.
+description: 이것은 필요한 기록물.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kycfeel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: kr
@@ -32,8 +32,10 @@ exclude:
   - vendor
 
 # Social media
-twitter_username:
-twitter_image:
+twitter:
+  username: kycfeel
+github:
+  username: kycfeel
 google_analytics:
 
 # Plugins

@@ -14,6 +14,8 @@ Jekyll과 GitHub 페이지
 
 [Google Analytics로 GitHub 페이지 분석하기](https://kycfeel.github.io/2017/03/02/Google-Analytics로-GitHub-페이지-분석하기/)
 
+[검색엔진에 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/03/검색엔진에-GitHub-페이지-검색-가능하게-하기/)
+
 개인적인 이야기
 ========================
 [공짜 라즈베리 파이가 생겼다](https://kycfeel.github.io/2017/03/02/공짜-라즈베리-파이가-생겼다/)
