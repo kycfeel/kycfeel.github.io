@@ -2,7 +2,7 @@
 layout: post
 title:  "OpenStack에 CloudKitty 연동하기"
 date:   2017-03-04 11:02:24 +0900
-categories: OpenStack & Linux
+categories: OpenStack
 ---
 
 CloudKitty?
