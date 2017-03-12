@@ -95,17 +95,12 @@ GRANT ALL PRIVILEGES ON cloudkitty.* TO 'cloudkitty'@'localhost' IDENTIFIED BY '
 EOF
 ```
 
-위 명령어로 Mysql에 DB를 만든 후, 다시 스크립트로 돌아가 `[database]` 칸을 방금 생성한 DB 정보로 수정한다. 저장한 후, 아래 명령어로 DB를 동기화하자.
-
-```
-cloudkitty-dbsync upgrade
-cloudkitty-storage-init
-```
+위 명령어로 Mysql에 DB를 만든 후, 다시 스크립트로 돌아가 `[database]` 칸을 방금 생성한 DB 정보로 수정한다. 저장한 후, 공식 메뉴얼과 달리 *Keystone 설정 먼저* 진행하도록 하겠다.
 
 Keystone 설정하기
 ========================
 
-물론 CloudKitty가 OpenStack과 연결되어 Rating 서비스를 처리하려면, 인증 체계인 Keystone을 거쳐야 한다. 우리가 위에 작성했던 스크립트 내용 중 `[ks_auth]`라는 파라미터가 존재했는데, 인증할 `username`을 cloudktity로 설정해 뒀으나 정작 우리는 그런 계정을 Keystone에 등록한 적이 없지 않은가? 그래서 그걸 지금부터 할 것이다. 혹시 자동으로 CloudKitty가 등록해 주지 않을까 환상을 품었다면 안타깝지만 그런 건 없다.
+왜 공식 메뉴얼 안 따라가고 혼자 독주를 하느냐? 물어본다면 답은 간단하다. *공식 메뉴얼을 그대로 따라가면 작동이 안 되기 때문이다.*  처음 CloudKitty를 설치할 때 가장 고생했던 부분이 이곳이다. 분명 나는 메뉴얼에 맞춰 따라했는데 작동이 안 되는 것이다. 하루이틀 삽질하다 찾아낸 방법은 *Keystone에 역할을 먼저 지정해줘야 한다는 것이다.*
 
 `keystoneclient` 로 접속해 아래 명령어로 필요한 계정을 생성해보자. *OpenStack-Controller로 돌아와* RDO 설치 기준 `keystonerc_admin` 파일이 있는 곳에서 `. keystonerc_admin` 명령어로 접속할 수 있다.
 
@@ -134,6 +129,13 @@ openstack endpoint create rating --region RegionOne \
     admin http://OpenStack-Controller IP주소:8889
 openstack endpoint create rating --region RegionOne \
     internal http://OpenStack-Controller IP주소:8889
+```
+
+여기까지 끝났으면 다시 CloudKitty가 실행되는 VM으로 돌아와 아래 명령어들을 입력한다.
+
+```
+cloudkitty-dbsync upgrade
+cloudkitty-storage-init
 ```
 
 CloudKitty 서비스 시작하기
