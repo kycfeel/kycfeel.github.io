@@ -10,7 +10,7 @@ categories: Docker
 DockerFile, 그리고 Docker-Compose
 ========================
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/compose.png?raw=true"/></div>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/compose.png?raw=true"/></div><br>
 
 
 마치 Docker 이미지와 컨테이너의 관계가 그랬듯, DockerFile과 Docker-Compose는 땔래야 땔 수 없는 관계이다. 우선 DockerFile 이미지를 실행하면서 특정 작업까지 같이 처리하게 해주는 도구고, Docker-Compose는 다수의 컨테이너를 쉽게 실행할 수 있게 도와주는 도구이다. 다시 말해, Docker-Compose로 컨테이너를 자동 생성한 후, DockerFile로 생성한 컨테이너 안에 자동으로 세팅 작업까지 돌아가게 할 수 있다는 것이다.
