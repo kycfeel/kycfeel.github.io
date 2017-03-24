@@ -30,6 +30,8 @@ Jekyll과 GitHub 페이지
 
 [검색엔진에서 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/03/검색엔진에서-GitHub-페이지-검색-가능하게-하기/)
 
+[GitHub 페이지에 댓글창 만들기](https://kycfeel.github.io/2017/03/24/GitHub-페이지에-댓글창-만들기/)
+
 개인적인 이야기
 ========================
 [풀스택 지향이 정말 옳은 일일까?](https://kycfeel.github.io/2017/03/19/풀스택-지향이-정말-옳은-일일까/)
