@@ -2,7 +2,7 @@
 layout: post
 title:  "RDO로 간편하게 OpenStack 설치하기"
 date:   2017-03-01 03:22:25 +0900
-categories: OpenStack
+categories: 시스템 운영과 배포
 ---
 
 시작하며

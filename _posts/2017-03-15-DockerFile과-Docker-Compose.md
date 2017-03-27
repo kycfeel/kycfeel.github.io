@@ -2,7 +2,7 @@
 layout: post
 title:  "DockerFile과 Docker-Compose"
 date:   2017-03-15 15:04:20 +0900
-categories: Docker
+categories: 시스템 운영과 배포
 ---
 
 [이전 포스트](https://kycfeel.github.io/2017/03/14/어서오세요-Docker의-세계에/)에서 기본적인 Docker의 개념과 설치법, 이미지 등을 다뤘다. 아직 안 읽어보셨다면 참고하시길.
