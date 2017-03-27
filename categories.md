@@ -4,21 +4,21 @@ title: Categories
 permalink: /categories/
 ---
 
-시스템 운영과 배포
+OpenStack
 ========================
 [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/02/28/RDO로-간편하게-OpenStack-설치하기/)
 
 [OpenStack에 CloudKitty 연동하기](https://kycfeel.github.io/2017/03/04/OpenStack에-CloudKitty-연동하기/)
 
-
-
+시스템 운영과 배포
+========================
 [어서오세요. Docker의 세계에.](https://kycfeel.github.io/2017/03/14/어서오세요-Docker의-세계에/)
 
 [DockerFile과 Docker-Compose](https://kycfeel.github.io/2017/03/15/DockerFile과-Docker-Compose/)
 
 [Docker 네트워크에 관하여](https://kycfeel.github.io/2017/03/16/Docker-네트워크에-관하여/)
 
-[Docker Swarm으로 고래엮기](https://kycfeel.github.io/2017/03/16/Docker-Swarm으로-고래엮기/)
+[Docker Swarm으로 고래엮기](https://kycfeel.github.io/2017/03/27/Docker-Swarm으로-고래엮기/)
 
 인터넷에서 얼굴 가리기
 ========================
