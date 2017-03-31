@@ -125,4 +125,57 @@ itv3ms2jm3i2  flaskontesting.5      p0bailey/docker-flask:latest  core-04  Runni
 
 잘 돌아가고 있는 것을 확인할 수 있다. 혹시라도 일부 컨테이너가 시작을 실패한 경우 `docker service update 서비스이름 --force` 명령어로 강제 재시작 시킬 수 있다. 물론 명령어는 `update` 이지만 아무 변경점 없이 `--force` 깃발을 달아 재시작만 할 수 있다. 자세한 내용은 [여기](https://github.com/docker/docker/issues/24413) 참조.
 
-일단 Swarm을 통한 부하 분산까지 다뤄봄으로서 기본적인 개념과 사용법은 익혔다. 물론 위 내용만으로도 정말 많은 일을 할 수 있겠지만, 조금 더 깊히 내려가보도록 하겠다. 여기까지 해서 잠깐 글을 끊고, 아래에 이어서 ‘심화’ 과정을 다뤄보겠다. 이 글 하단에 글을 이어붙히고 업데이트 할 것이니 나중에 돌아와 다시 읽어보면 될 것 같다.
+DB와 함께 구동되는 웹 서비스 구축
+===================
+
+잠깐 잊고 있었는데, GitHub 페이지 같은 정적 웹 서비스가 아닌 이상 DB 없이 혼자 구동되는 서비스는 거의 없다. DB 컨테이너를 따로 만들어 웹 애플리케이션 자체와 연결되는 구성을 해볼 것인데, 사실 전혀 어려운 건 없다. 그리고 우리는 이미 비슷한 구성을 이전에 해본 적이 있다. DockerFile과 Docker-Compose를 살펴볼 때 Flask와 Redis 컨테이너가 서로 연결되는 웹 애플리케이션을 이미 만들어 보지 않았는가? 이번에도 Flask와 Redis를 가지고 놀아 보겠다. 단지 다른 점은 Swarm 클러스터 위에 올라간다는 것 뿐이다.
+
+여기서 잠깐 재미있는 구성을 해 보겠다. 조금 전 우리가 올린 Flask 컨테이너는 기본적으로 제공되는 Ingress 네트워크를 통해 외부와 통신했다. 그럼 Redis DB도 Ingress에 배치해 외부에 노출된 상태로 Flask와 통신해야 할까? 아니다. 서버간 통신용 네트워크를 하나 더 만들면 된다. 아래 자료 이미지를 참고해 보자.
+
+> 설치 과정 설명을 시작하며 링크를 달아둔 [포스트](https://subicura.com/2017/02/25/container-orchestration-with-docker-swarm.html) 에서 가져왔다. 작성자 님이 직접 만드신 것 같은데, 구글에도 마음에 드는 이미지가 전혀 없어 어쩔 수 없이 손을 댔... 혹시 문제가 된다면 댓글로 알려 주세요. 바로 교체하겠습니다.
+
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/backendoverlay.png?raw=true"/></div><br>
+
+머릿속이 조금 정리가 되었는가? 위 이미지처럼 외부 통신은 Ingress, 내부 서버간 통신은 따로 만든 오버레이 네트워크를 통해 진행할 것이다. 혹시 마음은 급한데 이해가 잘 가지 않고 머리만 지끈거린다면 *꼭 조금 쉬다 와라.* 위에서부터 지금까지 한번에 쭉 내려오신 분들은 더더욱이다. 우리는 지금 코드로 인프라를 제어하는 완벽하게 정신적인 활동을 하고 있기 때문에 그때그때 컨디션에 따라 효율이 180도 달라질 수 있다. 휴식은 절대 농땡이나 죄를 짓는 것이 아니다.
+
+어느정도 머리가 맑아졌다면, 다시 열심히 달려보도록 하자. 아래의 명령어로 `backend` 라는 이름의 오버레이 네트워크를 생성할 수 있다.
+
+```
+docker network create --attachable \
+  --driver overlay \
+  backend
+```
+
+정상적으로 생성되었다면, 아마 `04vxf5jq7v294qha330okd2aw`와 같은 네트워크 ID값이 출력될 것이다. `docker network ls` 명령어로 생성된 네트워크들을 확인할 수 있다.
+
+```
+NETWORK ID          NAME                DRIVER              SCOPE
+04vxf5jq7v29        backend             overlay             swarm
+d0c72d79896d        bridge              bridge              local
+8817021f578e        docker_gwbridge     bridge              local
+735c71fe7b49        host                host                local
+ul98o5yxor9n        ingress             overlay             swarm
+12767a2f2080        none                null                local
+```
+
+저기 `backend`가 보인다. 제대로 잘 생성되었다. 덤으로 `ingress` 네트워크도 잘 지내고 있는 것을 볼 수 있다.
+
+그럼 바로 Redis 서비스를 생성할 차례다. 아래 명령어로 진행할 수 있다.
+
+```
+docker service create --name redis \
+  --network=backend \
+  redis
+```
+
+Docker는 말도 쉽게쉽게 잘듣고 조용해서 너무 좋은 것 같다. 쓸데없는 안내 없이 쿨하게 딱 생성된 Redis 서비스의 ID값만 뽑아준다. 필자의 경우 `5gnyczzqzxq6rmgvhz28x6k2p`가 출력되었다. `docker service ls` 명령어로 생성한 서비스들을 확인할 수 있다.
+
+```
+ID            NAME            MODE        REPLICAS  IMAGE
+3pyk3b8bo9t0  flaskontesting  replicated  5/5       p0bailey/docker-flask:latest
+5gnyczzqzxq6  redis           replicated  0/1       redis:latest
+```
+
+역시 잘 생성되고 있다.
+
+그럼 정말 이 Redis를 사용해서 무언가를 해보자. 이전 포스트에서 만들었던 Flask와 Redis가 함께 작동하며 내가 이 사이트에 몇번 방문했는지 알려주는 카운터 애플리케이션을 기억하나? 그걸 그대로 구현해 보겠다.
