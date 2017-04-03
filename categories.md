@@ -22,7 +22,7 @@ Docker
 
 RESTful Grateful
 ========================
-[RESTful Grateful](https://kycfeel.github.io/2017/04/03/RESTful한-머릿속-만들기/)
+[RESTful한 머릿속 만들기](https://kycfeel.github.io/2017/04/03/RESTful한-머릿속-만들기/)
 
 인터넷에서 얼굴 가리기
 ========================
