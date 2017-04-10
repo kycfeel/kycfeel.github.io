@@ -7,8 +7,8 @@ permalink: /projects/
 
 Mesh2Dodge
 ========================
-[개요 : 그곳에 네트워크가 있으라](https://kycfeel.github.io/2017/04/10/그곳에-네트워크가-있으라/)
+[개요 : 그곳에 네트워크가 있으라](https://kycfeel.github.io/projects/2017/04/10/그곳에-네트워크가-있으라/)
 
 [Piranoid](https://github.com/kycfeel/Piranoid)
 ========================
-[개요 : 지금은 유령이 되어야 할 때]
+개요 : 지금은 유령이 되어야 할 때
