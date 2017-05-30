@@ -42,7 +42,7 @@ GitHub 페이지
 
 - [GitHub 페이지에 댓글창 만들기](https://kycfeel.github.io/2017/03/24/GitHub-페이지에-댓글창-만들기/)
 
-- [GitHub 페이지에 웹 애플리케이션 배포하기](https://kycfeel.github.io/2017-05-30-GitHub-페이지에-웹-애플리케이션-배포하기/)
+- [GitHub 페이지에 웹 애플리케이션 배포하기](https://kycfeel.github.io/2017/05/30/GitHub-페이지에-웹-애플리케이션-배포하기/)
 
 개인적인 이야기
 ========================
