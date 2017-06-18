@@ -11,6 +11,6 @@ permalink: /projects/
 - GitHub에서 [소스코드 보기](https://github.com/kycfeel/divergence).
 - 프로젝트 개요 : [내 자리비움을 발산하라](_posts/2017-05-24-내-자리비움을-발산하라)
 
-piluster
+piluster [문서 준비 중]
 ========================
 - 프로젝트 개요 : [라즈베리 파이로 Docker Swarm 클러스터 만들기](_posts/2017-06-07-라즈베리-파이로-Docker-Swarm-클러스터-만들기)
