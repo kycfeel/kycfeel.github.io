@@ -3,6 +3,11 @@ layout: page
 title: Categories
 permalink: /categories/
 ---
+Linux
+========================
+- [Mdadm으로 소프트웨어 레이드 묶기](https://)
+
+- [Linux와 smb를 사용하는 맥 Time Machine 백업 서버 만들기](https://)
 
 OpenStack
 ========================
