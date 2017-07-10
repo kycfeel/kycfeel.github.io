@@ -2,7 +2,7 @@
 layout: post
 title:  "SMB를 사용하는 macOS Time Machine 백업 서버 만들기"
 date:   2017-06-20 15:20:10 +0900
-categories: Linux
+categories: System Engineering
 ---
 
 <div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/timemachine.jpg?raw=true"/></div><br>

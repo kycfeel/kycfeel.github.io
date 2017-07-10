@@ -3,9 +3,11 @@ layout: page
 title: Categories
 permalink: /categories/
 ---
-Linux
+System Engineering
 ========================
 - [SMB를 사용하는 맥 Time Machine 백업 서버 만들기](https://kycfeel.github.io/2017/06/20/smb를-사용하는-맥-Time-Machine-백업-서버-만들기/)
+
+- [라즈베리 파이를 이용한 OpenVPN 환경 구축하기](https://kycfeel.github.io/2017/07/10/라즈베리-파이로-OpenVPN-환경-구축하기/)
 
 OpenStack
 ========================
