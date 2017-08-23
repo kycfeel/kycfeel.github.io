@@ -13,7 +13,7 @@ piluster
 ========================
 개발자의 본업은 이름 짓는 것이라고 종종 말해왔지만, 이번에는 도저히 시간을 투자할 수 없었다. 나는 한번의 작업을 위해 고속버스를 타고 슝슝슝 달려와야 하는 입장이라 도착도 하기 전에 피로가 한가득 쌓여있었고, 작업 중에도 역시나 생각하지도 않은 문제들이 펑펑 터져나와서 작명이라는 고도의 문학적이고 감성적인 일은 어려웠다. 결국 그냥 라즈베리 파이 + 클러스터 라고 해서 piluster로 퉁 쳤다. 당장 부를 이름이 없는데 어쩌겠는가 :).
 
-![piluster_equidments](/_images/piluster_equidments.JPG)
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/piluster_equidments.jpg?raw=true"/></div>
 
 사용한 장비는 위와 같다. 라즈베리 파이 3 5대, 짱짱하고 싼 마이크로 5핀 5개, 외부 전원 공급이 가능한 USB 허브, 그리고 적당한 공유기, 스위칭 허브 (물론 인터넷에서 USB OTG만을 통한 클러스터 구축 방법도 보긴 했지만, 여기서는 가장 범용적인 방법을 선택했다.)
 
@@ -74,7 +74,7 @@ id  서비스_이름.1  만든이/이미지_이름:1  rpi-01  Running        Run
 
 60초간 100명의 가상 접속자를 만들어 라즈베리 파이를 괴롭힌 결과, 아래와 같은 값을 얻었다.
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/single_node_rpi.png?raw=true"/></div><br>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/single_node_rpi.png?raw=true"/></div>
 
 흠. 인터레스팅 하다. 무선 네트워크 간섭 등 여러가지 장애물이 껴 있어 신뢰도 높은 값이라고는 절대 지칭하지 못하겠지만, 추후 부하분산 상태에서의 값과 비교할 가치는 충분히 있어 보인다. 자 그럼, 바로 다음 값을 측정할 준비를 해보자.
 
@@ -88,7 +88,7 @@ docker swarm scale 서비스_이름=컨테이너_갯수
 
 `docker service ls` 명령어 등을 통해 모든 컨테이너가 정상적으로 구동되고 있는 것을 확인했다면, 다시한번 퍼포먼스 테스트를 해볼 차례다. 위 단일 컨테이너 테스트와 동일한 조건값으로 진행하였다.
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/multi_node_rpi.png?raw=true"/></div><br>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/multi_node_rpi.png?raw=true"/></div>
 
 오호라. 확실히 평균 지연시간부터 최소 지연시간까지 모두 줄어든 것을 볼 수 있다. 위와 비교해 엄청나게 늘어난 초당 요청 횟수를 통해 여러 컨테이너로 부하분산이 되었다는 것을 확인할 수 있다. 조그만한 라즈베리 파이라도 클러스터링을 통해 확실한 퍼포먼스 향상을 꾀할 수 있다는 것을 직접 눈으로 봤다.
 
