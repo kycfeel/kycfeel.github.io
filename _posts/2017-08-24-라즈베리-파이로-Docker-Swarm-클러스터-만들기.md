@@ -13,7 +13,7 @@ piluster
 ========================
 개발자의 본업은 이름 짓는 것이라고 종종 말해왔지만, 이번에는 도저히 시간을 투자할 수 없었다. 나는 한번의 작업을 위해 고속버스를 타고 슝슝슝 달려와야 하는 입장이라 도착도 하기 전에 피로가 한가득 쌓여있었고, 작업 중에도 역시나 생각하지도 않은 문제들이 펑펑 터져나와서 작명이라는 고도의 문학적이고 감성적인 일은 어려웠다. 결국 그냥 라즈베리 파이 + 클러스터 라고 해서 piluster로 퉁 쳤다. 당장 부를 이름이 없는데 어쩌겠는가 :).
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/piluster_equidments.jpg?raw=true"/></div>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/piluster_equidments.JPG?raw=true"/></div></br>
 
 사용한 장비는 위와 같다. 라즈베리 파이 3 5대, 짱짱하고 싼 마이크로 5핀 5개, 외부 전원 공급이 가능한 USB 허브, 그리고 적당한 공유기, 스위칭 허브 (물론 인터넷에서 USB OTG만을 통한 클러스터 구축 방법도 보긴 했지만, 여기서는 가장 범용적인 방법을 선택했다.)
 
