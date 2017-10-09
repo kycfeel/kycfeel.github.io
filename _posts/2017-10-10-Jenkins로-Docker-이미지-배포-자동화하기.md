@@ -12,7 +12,7 @@ categories: Docker
 DinD (Docker-in-Docker)
 ========================
 
-![docker-meme]('https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/docker-meme.jpg?raw=true')
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/docker-meme.jpg?raw=true"/></div><br/>
 
 지금부터 하나 재미있는 시도를 해보자. 바로 Jenkins를 Docker 컨테이너로 구동한 후, 그 컨테이너 안에 또 Docker 데몬을 구동해 도커 안의 도커 환경을 만들어 볼 거다. Jenkins 컨테이너가 자체적으로 Docker 이미지를 생성할 수 있게 만드는 거다. Git에 새로운 코드를 커밋하면 Jenkins가 이를 감지하고 자동으로 Docker 이미지를 생성해, 업로드까지 해주는 구성을 해보자.
 
@@ -44,7 +44,7 @@ docker build -t 저장소명/이미지명 .
 docker push 저장소명/이미지명
 ```
 
-![jenkins-config]('https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/jenkins-config.png?raw=true')
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/jenkins-config.png?raw=true"/></div><br/>
 
 모두 설정을 마쳤을 경우 아마 위 이미지와 비슷할 것이다. 저장을 눌러 빠져나오자.
 
