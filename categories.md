@@ -11,7 +11,7 @@ System Engineering
 
 OpenStack
 ========================
-- [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/02/28/RDO로-간편하게-OpenStack-설치하기/)
+- [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/03/01/RDO로-간편하게-OpenStack-설치하기/)
 
 - [OpenStack에 CloudKitty 연동하기](https://kycfeel.github.io/2017/03/04/OpenStack에-CloudKitty-연동하기/)
 
@@ -41,7 +41,7 @@ GitHub 페이지
 ========================
 - [GitHub에 개인 페이지 만들기](https://kycfeel.github.io/2017/03/01/GitHub에-개인-페이지-만들기/)
 
-- [Google Analytics로 GitHub 페이지 분석하기](https://kycfeel.github.io/2017/03/03/Google-Analytics로-GitHub-페이지-분석하기/)
+- [Google Analytics로 GitHub 페이지 분석하기](https://kycfeel.github.io/2017/03/03/Google-Analytics로-GitHub-페이지-분석하기/)
 
 - [검색엔진에서 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/03/검색엔진에서-GitHub-페이지-검색-가능하게-하기/)
 
