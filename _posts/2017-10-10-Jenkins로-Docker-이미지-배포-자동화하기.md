@@ -30,7 +30,7 @@ docker run -p 연결할_포트번호:8080 -v 연결할/경로:/var/jenkins_home 
 
 자, 그대로 사용하시던 혹은 업데이트를 하셨던, 이제 우리의 알맹이를 공략하자. Jenkins 웹 콘솔에서 `새로운 Item` 버튼을 타고 프로젝트 생성 페이지로 넘어가보자. 프로젝트 이름을 입력하고, `Freestyle project`를 누르면 된다.
 
-> 혹시 최신 버전의 Jenkins로 업데이트한 후, `새로운 Item` 버튼을 누르면 빈 페이지만 보일 경우, `Jenkins 관리` -> `플러그인 관리` 메뉴에 들어가 `External Job Monitor`을 최신 버전으로 업데이트하면 된다. 이 버그리포팅을 [참조]('https://issues.jenkins-ci.org/browse/JENKINS-35512')하면 도움이 될 것이다.
+> 혹시 최신 버전의 Jenkins로 업데이트한 후, `새로운 Item` 버튼을 누르면 빈 페이지만 보일 경우, `Jenkins 관리` -> `플러그인 관리` 메뉴에 들어가 `External Job Monitor`을 최신 버전으로 업데이트하면 된다. 이 버그리포팅을 [참조](https://issues.jenkins-ci.org/browse/JENKINS-35512)하면 도움이 될 것이다.
 
 상세 구성을 할 수 있는 페이지가 나올건데, `소스 코드 관리` 라는 항목에서 `Git`을 선택하고 자신의 저장소 URL과 인증 정보 등을 입력한다. 필자는 BitBucket을 연동할 생각이기에 그 아래 항목의 `빌드 유발` 항목에서 `Build when a change is pushed to BitBucket` 을 선택했다.
 
