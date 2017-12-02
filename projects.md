@@ -15,6 +15,7 @@ permalink: /projects/
 ========================
 직접 구축하는 비영리 모바일 네트워크 프로젝트.
 - [모두를 위한 모바일 네트워크, dokupe.](https://kycfeel.github.io/2017/11/08/모두를-위한-모바일-네트워크-dokupe)
+- [YateBTS를 사용하는 홈메이드 GSM 네트워크 구축하기](https://kycfeel.github.io/2017/12/02/YateBTS를-사용하는-홈메이드-GSM-네트워크-구축하기)
 
 `piluster`
 ========================
