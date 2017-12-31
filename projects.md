@@ -5,6 +5,12 @@ permalink: /projects/
 ---
 이곳에 작성되는 글은 미완성인 상태로 업데이트가 되거나, 또는 그 업데이트 주기가 불규칙할 수 있습니다.
 
+`이더피커 (ETHpeeker)`
+========================
+실시간 빗썸 가상화폐 시세를 엿봅니다.
+- [지금 텔레그램에서 사용해 보기.](https://telegram.me/ethpeeker_bot)
+- GitHub에서 [소스코드 보기](https://github.com/kycfeel/ETHpeeker).
+
 `divergence`
 ========================
 - [여기](https://kycfeel.github.io/divergence)를 눌러 직접 사용해보기.
