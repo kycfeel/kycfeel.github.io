@@ -103,7 +103,7 @@ docker service create \
 ```
 
 <div align="center"><img
- src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/traefik_provider.png?raw=true"/></div><br/>
+ src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/traefik-provider.png?raw=true"/></div><br/>
 
 다시 traefik 콘솔을 살펴보자. `Providers` 메뉴에 방금 실행한 `whoami0` 서비스가 나타났을 것이다. 웹 브라우저로 80 포트에 접속할 경우 정상적으로 `whoami0` 서비스까지 닿을 수 있다.
 
