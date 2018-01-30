@@ -64,7 +64,7 @@ Yeelight 앱을 통해 전구와 연결된 스마트폰에서, 하단 설정 메
 시리야, 불 꺼.
 =========
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/home-main.jpg?raw=true"/></div><br/>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/home-main.png?raw=true"/></div><br/>
 
 <div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/home-color.jpg?raw=true"/></div><br/>
 
