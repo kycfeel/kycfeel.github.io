@@ -33,6 +33,8 @@ Kubernetes
 ========================
 - [나도 Kubernetes 써보고 싶어요!](https://kycfeel.github.io/2018/08/02/나도-Kubernetes-써보고-싶어요/)
 
+- [스스로 Kubernetes 클러스터 구축하기](https://kycfeel.github.io/2018/10/14/스스로-Kubernetes-클러스터-구축하기/)
+
 OpenStack
 ========================
 - [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/03/01/RDO로-간편하게-OpenStack-설치하기/)
