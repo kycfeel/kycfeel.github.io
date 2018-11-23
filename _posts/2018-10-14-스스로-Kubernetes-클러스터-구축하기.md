@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "스스로 Kubernetes 클러스터 구축하기"
-date:   2018-01-26 18:25:45 +0900
-categories: Docker
+date:   2018-10-14 18:25:45 +0900
+categories: Kubernetes
 ---
 <div align="center"><img src="https://cdn.dribbble.com/users/1714527/screenshots/4245728/kubernetes.gif"/></div><br/>
 
