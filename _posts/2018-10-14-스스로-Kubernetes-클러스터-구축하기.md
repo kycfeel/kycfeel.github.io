@@ -4,7 +4,7 @@ title:  "스스로 Kubernetes 클러스터 구축하기"
 date:   2018-10-14 18:25:45 +0900
 categories: Kubernetes
 ---
-<div align="center"><img src="https://cdn.dribbble.com/users/1714527/screenshots/4245728/kubernetes.gif"/></div><br/>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/kubernetes_hero.png?raw=true"/></div><br/>
 
 자. 새로운 주제의 새로운 시작이다.
 
@@ -26,9 +26,9 @@ kubeadm은 가장 빠르고 간단하게 미니멀한 쿠버네티스 클러스�
 = Ubuntu 16.04 1vCore / 2GB - node2 (slave)
 ```
 
-잠깐. master? node? 생소한 단어가 막 나온다. 아니, 얼핏 개념은 알 것이다. master가 책임자고 node가 일한다고 말이다.
+잠깐. master? node? 생소한 단어가 막 나온다. 아니, 얼핏 개념은 알 것이다. master가 책임자고 node가 일하는 녀석이라고 말이다.
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/kubernetes_basic_diagram.png?raw=true"/></div><br/>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/kubernetes_master_and_node_diagram.svg?raw=true"/></div><br/>
 
 바로 그거다. 쿠버네티스에서도 크게 달라지는 것은 없다. master에는 쿠버네티스 전체를 제어할 수 있는 API 서버나, 쿠버네티스 클러스터에 관한 정보를 저장하는 [etcd](https://github.com/etcd-io/etcd) 저장소 등이 구동된다. node가 진짜 일꾼이다. 우리가 앞으로 올릴 애플리케이션 컨테이너는 바로 node에서 구동될 것이다. 이 개념을 감안해 본인의 환경에 맞게 적절하게 테스트 환경의 리소스를 조절하길 바란다.
 
@@ -226,10 +226,10 @@ Hello, World?
 
 마지막으로 이 글을 정독한 모두에게, 클러스터 오케스트레이션 세상에 첫 발을 내딛을 걸 환영한다고 박수를 쳐주고 싶다. 처음 접근은 어려울 지 몰라도, 한번 익숙해지면 이전의 서버 운영과는 차원이 다른 편안함과 유연함을 맛볼 수 있을 것이라 장담한다.
 
-- 쿠버네티스 워드프레스 실행하기 : https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
+- [쿠버네티스 워드프레스 실행하기](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 
-- 쿠버네티스에 Postgres 데이터베이스 구축하기 : https://severalnines.com/blog/using-kubernetes-deploy-postgresql
+- [쿠버네티스에 Postgres 데이터베이스 구축하기](https://severalnines.com/blog/using-kubernetes-deploy-postgresql)
 
 그리고 다음에 다룰 내용에 관한 글도 하나 첨부한다. 기존의 쿠버네티스 yaml 파일도 쓸만은 하지만, 너무나 정적인 탓에 같은 애플리케이션 (또는 이미지) 기반으로 여러 환경을 만들어야 할 경우 그 환경들을 위한 모든 yaml 파일을 만들어야 하는 등 단점이 명확한데, Helm 이라는 패키지 매니저가 그런 문제를 해결해줄 수 있다. 자세한 내용은 다음에 다루겠다.
 
-- 쿠버네티스 패키지 매니저, Helm 사용하기 : https://daemonza.github.io/2017/02/20/using-helm-to-deploy-to-kubernetes/
+- [쿠버네티스 패키지 매니저, Helm 사용하기](https://daemonza.github.io/2017/02/20/using-helm-to-deploy-to-kubernetes/)
