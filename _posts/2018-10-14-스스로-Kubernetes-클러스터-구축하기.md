@@ -28,8 +28,6 @@ kubeadm은 가장 빠르고 간단하게 미니멀한 쿠버네티스 클러스�
 
 잠깐. master? node? 생소한 단어가 막 나온다. 아니, 얼핏 개념은 알 것이다. master가 책임자고 node가 일하는 녀석이라고 말이다.
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/kubernetes_master_and_node_diagram.svg?raw=true"/></div><br/>
-
 바로 그거다. 쿠버네티스에서도 크게 달라지는 것은 없다. master에는 쿠버네티스 전체를 제어할 수 있는 API 서버나, 쿠버네티스 클러스터에 관한 정보를 저장하는 [etcd](https://github.com/etcd-io/etcd) 저장소 등이 구동된다. node가 진짜 일꾼이다. 우리가 앞으로 올릴 애플리케이션 컨테이너는 바로 node에서 구동될 것이다. 이 개념을 감안해 본인의 환경에 맞게 적절하게 테스트 환경의 리소스를 조절하길 바란다.
 
 master 구성하기
