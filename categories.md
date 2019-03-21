@@ -35,6 +35,8 @@ Kubernetes
 
 - [스스로 Kubernetes 클러스터 구축하기](https://kycfeel.github.io/2018/10/14/스스로-Kubernetes-클러스터-구축하기/)
 
+- [eksctl로 구축하는 AWS EKS Kubernetes 클러스터](./_posts/2019-03-21-eksctl로-구축하는-aws-eks-kubernetes-클러스터.md)
+
 OpenStack
 ========================
 - [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/03/01/RDO로-간편하게-OpenStack-설치하기/)

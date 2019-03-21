@@ -5,7 +5,7 @@ date:   2019-03-21 19:48:45 +0900
 categories: Kubernetes
 ---
 
-<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/awsekslogo.png?raw=true"/></div><br/>
+<div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/awsekslogo.jpg?raw=true"/></div><br/>
 
 [이전 글](./2018-10-14-스스로-Kubernetes-클러스터-구축하기.md) 에서 kubeadm을 사용해 베어메탈 쿠버네티스 클러스터를 구축하는 법을 다루었는데, 아무래도 실 서비스 환경에서는 조금 더 관리할 것이 덜하고 안정적인 무언가가 필요하다.
 
