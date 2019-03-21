@@ -7,7 +7,7 @@ categories: Kubernetes
 
 <div align="center"><img src="https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/awsekslogo.jpg?raw=true"/></div><br/>
 
-[이전 글](./2018-10-14-스스로-Kubernetes-클러스터-구축하기) 에서 kubeadm을 사용해 베어메탈 쿠버네티스 클러스터를 구축하는 법을 다루었는데, 아무래도 실 서비스 환경에서는 조금 더 관리할 것이 덜하고 안정적인 무언가가 필요하다.
+[이전 글](https://kycfeel.github.io/2018/10/14/스스로-Kubernetes-클러스터-구축하기/) 에서 kubeadm을 사용해 베어메탈 쿠버네티스 클러스터를 구축하는 법을 다루었는데, 아무래도 실 서비스 환경에서는 조금 더 관리할 것이 덜하고 안정적인 무언가가 필요하다.
 
 그런 생각을 하는 사람은 필자와 우리 독자 뿐만 아니라, 쿠버네티스를 프로덕션에 사용하고 싶어하는 모든 개발자들이 하고 있다. 개발자가 상상한다면 반드시 결과물이 나오는 법. 이미 세상에는 구글, 아마존, MS 등이 제공하는 다양한 관리형 쿠버네티스 서비스들이 나와있다.
 
