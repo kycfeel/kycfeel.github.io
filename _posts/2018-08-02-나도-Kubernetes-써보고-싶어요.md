@@ -40,3 +40,9 @@ categories: Kubernetes
 - [레드헷 - Docker란?](https://www.redhat.com/ko/topics/containers/what-is-docker)
 
 - [레드헷 - Linux 컨테이너에 대해 알아보세요](https://www.redhat.com/ko/topics/containers)
+
+## 다음 글
+
+- [스스로 Kubernetes 클러스터 구축하기](https://kycfeel.github.io/2018/10/14/스스로-Kubernetes-클러스터-구축하기/)
+
+- [eksctl로 구축하는 AWS EKS 클러스터](./2019-03-21-eksctl로-구축하는-aws-eks-kubernetes-클러스터.md)
