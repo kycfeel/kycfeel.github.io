@@ -11,6 +11,8 @@ categories: Resume
 ========================
 
 - Email : kycfeel@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/yechan-kim-652935155/)
+- [Rocketpunch](https://www.rocketpunch.com/@kycfeel)
 
 살아온 이야기
 ========================

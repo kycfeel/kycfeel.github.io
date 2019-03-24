@@ -3,7 +3,7 @@ layout: page
 title: Categories
 permalink: /categories/
 ---
-System Engineering
+General DevOps
 ========================
 - [SMB를 사용하는 맥 Time Machine 백업 서버 만들기](https://kycfeel.github.io/2017/06/20/smb를-사용하는-맥-Time-Machine-백업-서버-만들기/)
 
@@ -23,7 +23,7 @@ Docker
 
 - [Docker Swarm으로 고래엮기](https://kycfeel.github.io/2017/03/27/Docker-Swarm으로-고래엮기/)
 
-- [Jenkins로 Docker 이미지 배포 자동화하기](https://kycfeel.github.io/2017/10/10/Jenkins로-Docker-이미지-배포-자동화하기/)
+- [Jenkins로 Docker 이미지 배포 자동화하기](https://kycfeel.github.io/2017/10/09/Jenkins로-Docker-이미지-배포-자동화하기/)
 
 - [Portainer를 통한 Docker 초점잡기](https://kycfeel.github.io/2017/12/31/Portainer를-통한-Docker-초점잡기/)
 
@@ -61,7 +61,7 @@ GitHub 페이지
 
 - [Google Analytics로 GitHub 페이지 분석하기](https://kycfeel.github.io/2017/03/03/Google-Analytics로-GitHub-페이지-분석하기/)
 
-- [검색엔진에서 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/03/검색엔진에서-GitHub-페이지-검색-가능하게-하기/)
+- [검색엔진에서 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/02/검색엔진에서-GitHub-페이지-검색-가능하게-하기/)
 
 - [GitHub 페이지에 댓글창 만들기](https://kycfeel.github.io/2017/03/24/GitHub-페이지에-댓글창-만들기/)
 
