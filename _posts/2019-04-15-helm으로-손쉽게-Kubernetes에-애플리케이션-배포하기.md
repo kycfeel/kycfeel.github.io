@@ -81,7 +81,7 @@ Helm Chart로 애플리케이션 실행하기
 
 `Helm` 패키지 설치는 `helm install` 명령어를 통해 이루어진다, 적당한 패키지를 고르지 못했다면, 필자가 만든 데모용 애플리케이션을 설치해보며 어떻게 `Helm`을 사용할지 감을 잡을 수 있다.
 
-먼저 [이 링크](../.post_attachments/helm-helloworld.tgz)에서 데모 `Helm Chart`를 다운로드 받은 후, 압축을 풀고, 적당한 텍스트 에디터로 열어보도록 하자. 구조는 아래와 같을 것이다.
+먼저 [이 링크](https://github.com/kycfeel/kycfeel.github.io/raw/master/.post_attachments/helm-helloworld.tgz)에서 데모 `Helm Chart`를 다운로드 받은 후, 압축을 풀고, 적당한 텍스트 에디터로 열어보도록 하자. 구조는 아래와 같을 것이다.
 
 > `Helm Chart` 설치는 `tgz`로 압축된 상태에서도 가능하지만, 이번에는 실습을 위해 압축을 해제했습니다. 물론 압축 해제된 폴더 그 자체로도 설치가 가능합니다. 
 
