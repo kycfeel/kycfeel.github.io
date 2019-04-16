@@ -37,6 +37,8 @@ Kubernetes
 
 - [eksctl로 구축하는 AWS EKS Kubernetes 클러스터](./_posts/2019-03-21-eksctl로-구축하는-aws-eks-kubernetes-클러스터.md)
 
+- [Helm으로 손쉽게 Kubernetes에 애플리케이션 배포하기](./_posts/2019-04-15-helm으로-손쉽게-Kubernetes에-애플리케이션-배포하기.md)
+
 OpenStack
 ========================
 - [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/03/01/RDO로-간편하게-OpenStack-설치하기/)
@@ -61,7 +63,7 @@ GitHub 페이지
 
 - [Google Analytics로 GitHub 페이지 분석하기](https://kycfeel.github.io/2017/03/03/Google-Analytics로-GitHub-페이지-분석하기/)
 
-- [검색엔진에서 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/03/검색엔진에서-GitHub-페이지-검색-가능하게-하기/)
+- [검색엔진에서 GitHub 페이지 검색 가능하게 하기](https://kycfeel.github.io/2017/03/02/검색엔진에서-GitHub-페이지-검색-가능하게-하기/)
 
 - [GitHub 페이지에 댓글창 만들기](https://kycfeel.github.io/2017/03/24/GitHub-페이지에-댓글창-만들기/)
 
