@@ -58,7 +58,7 @@ APT 서버를 직접 구동한다고 해도, 결국 그 안에 들어갈 패키�
 
 파일에 문제가 없다면, 이제 `crontab/apt-mirror` 을 열어보자. 이곳에는 어느 주기로 원격 저장소에서 파일을 다시 받아올 지 명시하는 crontab 규칙이 담겨 있다. 중요한 부분은 파일 맨 앞에 있는 cron 주기 표시다. 기본은 `0 4 * * *`, 매일 오전 4시에 (UTC) `apt-mirror` 명령어를 다시 실행하도록 설정해 두었다. 본인의 필요에 따라 수정을 권장하고, cron 규칙이 영 무섭게 생겼다면 [crontab.guru](http://crontab.guru) 사이트가 도움의 손길을 내밀어줄 것이다.
 
-마지막으로 `[postmirror.sh](http://postmirror.sh)` 다. `apt-mirror` 는 매번 원격 저장소에서 파일을 다운로드 한 후 이 스크립트를 실행해 마무리 작업을 한다. 의무적으로 무언가 요구되는 작업은 없어 이 파일을 공백으로 내비 둬도 상관 없지만, Git 저장소에 올린 파일에는 이 곳에 `apt-mirror` 의 내부 `/var/spool/apt-mirror/var/clean.sh` 스크립트를 명시해 둬 다운로드 후 더 이상 필요 없는 찌꺼기를 알아서 지울 수 있게 해뒀다.
+마지막으로 [postmirror.sh](http://postmirror.sh) 다. `apt-mirror` 는 매번 원격 저장소에서 파일을 다운로드 한 후 이 스크립트를 실행해 마무리 작업을 한다. 의무적으로 무언가 요구되는 작업은 없어 이 파일을 공백으로 내비 둬도 상관 없지만, Git 저장소에 올린 파일에는 이 곳에 `apt-mirror` 의 내부 `/var/spool/apt-mirror/var/clean.sh` 스크립트를 명시해 둬 다운로드 후 더 이상 필요 없는 찌꺼기를 알아서 지울 수 있게 해뒀다.
 
 `docker-compose.yaml` 을 열어보면 방금 확인했던 파일들을 볼륨의 형태로 마운트해 `apt-mirror` 컨테이너 사용한다는 것을 알 수 있다.
 
