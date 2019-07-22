@@ -32,7 +32,7 @@
 
 빼곡하게 적혀있는 URL의 앞에 적혀있는 `deb` 는, `.deb` 확장자로 만들어진 데비안 애플리케이션 패키지를 뜻한다. `deb-src` 는 패키징이 이루어지지 않은 애플리케이션 소스, 그리고 추후의 패키징을 위해 패키지명 정보 등을 담은 `dsc` (데비안 컨트롤 파일) 이 되시겠다. 즉, 위 예시 파일은 저장소에서 이미 패키징이 된 `deb` 파일만 다운로드 받겠다라는 뜻이 된다.
 
-저장소 URL - `[http://archive.ubuntu.com/ubuntu/](http://archive.ubuntu.com/ubuntu/)` 은 우분투에서 자체적으로 제공하는 1차 아카이브 (우분투 직속) 저장소에 연결하는 링크다. 일반적으로 사용되는 것은 `http` 지만, APT는 `ftp` 등 파일 전송이 가능한 다양한 프로토콜을 함께 지원한다.
+저장소 URL - [http://archive.ubuntu.com/ubuntu/](http://archive.ubuntu.com/ubuntu/) 은 우분투에서 자체적으로 제공하는 1차 아카이브 (우분투 직속) 저장소에 연결하는 링크다. 일반적으로 사용되는 것은 `http` 지만, APT는 `ftp` 등 파일 전송이 가능한 다양한 프로토콜을 함께 지원한다.
 
 그 뒤에 따라오는 `bionic` 은 우분투의 버전 코드네임 (18.04 LTS), `main`, `restricted`, `universe`, `multiverse` 는 저장소에 올라와 있는 애플리케이션이 무료인지, 코드가 완전히 공개되어 있는지, 유료 라이센스가 필요한지 등에 따라 정리해둔 일종의 카테고리라 생각할 수 있겠다. 관련하여 자세히 알고 싶다면 [이 링크](https://www.howtogeek.com/194247/whats-the-difference-between-main-restricted-universe-and-multiverse-on-ubuntu/)를 참조하자.
 
