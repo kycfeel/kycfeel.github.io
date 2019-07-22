@@ -9,7 +9,7 @@ General DevOps
 
 - [라즈베리 파이를 이용한 OpenVPN 환경 구축하기](https://kycfeel.github.io/2017/07/10/라즈베리-파이로-OpenVPN-환경-구축하기/)
 
-- [Docker로 쉽게 올리는 나만의 APT 미러 서버](./_posts/Docker로-쉽게-올리는-나만의-APT-미러-서버/)
+- [Docker로 쉽게 올리는 나만의 APT 미러 서버](https://kycfeel.github.io/2019/07/22/Docker%EB%A1%9C-%EC%89%BD%EA%B2%8C-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%82%98%EB%A7%8C%EC%9D%98-APT-%EB%AF%B8%EB%9F%AC-%EC%84%9C%EB%B2%84/)
 
 IoT
 ==========

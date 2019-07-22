@@ -1,6 +1,6 @@
 # Docker로 쉽게 올리는 나만의 APT 미러 서버
 
-![](../_images/docker-apt-mirror-gif.gif)
+![gif](../_images/docker-apt-mirror-gif.gif)
 
 안녕 독자들. 문득 그런 생각이 들었다. 흔히 `apt-get` 명령어를 통해 필요한 패키지를 쉽게 다운로드 받고, 그게 익숙한 것이 되다 보니 마치 수도꼭지에서 물 틀어 마시듯 당연하게 사용하고 있는데, 만약 무슨 일이 생겨 APT 패키지를 제공하는 서버가 내려간다면? 
 
@@ -112,7 +112,7 @@ APT 서버를 직접 구동한다고 해도, 결국 그 안에 들어갈 패키�
 
 위와 같은 로그와 함께 모든 다운로드가 완료되었다면, `http://<나의_도메인>/ubuntu` 주소를 통해 미러에 접근할 수 있다. 아래와 같은 파일 구조가 보인다면 정상적으로 설치된 것이다.
 
-![](../_images/docker-apt-mirror-ubuntu-screenshot.png)
+![screenshot](../_images/docker-apt-mirror-ubuntu-screenshot.png)
 
 이제, 미러가 정말 제대로 동작하는지 확인할 차례다. 우분투 OS의 `/etc/apt/sources.list` 에 들어가 이미 적혀있는 저장소의 주소 ([`http://archive.ubuntu.com`](http://archive.ubuntu.com/), `http://security.ubuntu.com`) 를 `http://<나의_도메인>/ubuntu` 로 변경한 후, `apt-get update` 명령어를 실행해 정상적으로 데이터를 받아오는지 확인하자. 
 
