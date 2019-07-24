@@ -28,6 +28,11 @@ permalink: /projects/
 저렴한 비용으로 만들어본 물리적 분산 컴퓨팅 환경.
 - [라즈베리 파이로 Docker Swarm 클러스터 만들기](./_posts/2017-08-24-라즈베리-파이로-Docker-Swarm-클러스터-만들기.md).
 
+`dokupe APT Mirror`
+========================
+Ubuntu 사용자의 빠른 패키지 다운로드를 위한 APT 미러 서버 프로젝트.
+- [국내 Ubuntu 사용자를 위한 새로운 APT 미러, dokupe.](https://kycfeel.github.io/2019/07/22/Docker%EB%A1%9C-%EC%89%BD%EA%B2%8C-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%82%98%EB%A7%8C%EC%9D%98-APT-%EB%AF%B8%EB%9F%AC-%EC%84%9C%EB%B2%84/).
+
 
 `메우봇`
 ========================

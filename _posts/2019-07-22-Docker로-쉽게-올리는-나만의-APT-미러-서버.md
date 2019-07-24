@@ -1,5 +1,3 @@
-# Docker로 쉽게 올리는 나만의 APT 미러 서버
-
 ![gif](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/docker-apt-mirror-gif.gif?raw=true)
 
 안녕 독자들. 문득 그런 생각이 들었다. 흔히 `apt-get` 명령어를 통해 필요한 패키지를 쉽게 다운로드 받고, 그게 익숙한 것이 되다 보니 마치 수도꼭지에서 물 틀어 마시듯 당연하게 사용하고 있는데, 만약 무슨 일이 생겨 APT 패키지를 제공하는 서버가 내려간다면? 
@@ -76,6 +74,8 @@ APT 서버를 직접 구동한다고 해도, 결국 그 안에 들어갈 패키�
 
     docker-compose up -d
 
+> 기본 옵션으로는, 첫 실행 시 로컬 머신에서 직접 도커 이미지를 빌드한다. 만약 이 과정을 생략하고 싶다면, Docker Hub의 `kycfeel/dockerized-apt-mirror` 저장소에서 언제나 최신 이미지를 다운로드 받을 수 있다. 원하는 버전 태그를 잘 확인하고 사용할 것. 
+
 컨테이너가 올라갔다면, `docker logs <apt-mirror-컨테이너-이름>` 으로 정상적으로 `apt-mirror` 가 실행되고 있는지 확인하자. 처음 실행이라면, 약 **500GB ~ 600GB** 정도의 파일이 다운로드 될 것이다. 다운로드에는 수 시간이 소요될 수 있다. 만약 용량이 너무 부담스럽다면, 상단의 `mirror.list` 를 수정해 필요없는 저장소를 제외하도록 하자.
 
     (...)
@@ -130,5 +130,5 @@ APT 서버를 직접 구동한다고 해도, 결국 그 안에 들어갈 패키�
 
 - Ubuntu 16.04 LTS
 - Ubuntu 18.04 LTS
-- Ubuntu 19.04 LTS
+- Ubuntu 19.04
 - Ubuntu 19.10 (Latest!)
