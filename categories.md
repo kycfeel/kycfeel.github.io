@@ -17,6 +17,10 @@ IoT
 ==========
 - [Homebridge로 미지원 IoT 기기 HomeKit 제어하기](https://kycfeel.github.io/2018/01/30/Homebridge로-미지원-IoT-기기-HomeKit-제어하기/)
 
+HollaEx
+==========
+- [HollaEx로 나만의 암호화폐 거래소 만들기](https://kycfeel.github.io/2019/10/31/HollaEx%EB%A1%9C-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90-%EA%B1%B0%EB%9E%98%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+
 Docker
 ========================
 - [어서오세요. Docker의 세계에.](https://kycfeel.github.io/2017/03/14/어서오세요-Docker의-세계에/)
