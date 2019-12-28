@@ -43,6 +43,8 @@ Kubernetes
 
 - [Helm으로 손쉽게 Kubernetes에 애플리케이션 배포하기](./_posts/2019-04-15-helm으로-손쉽게-Kubernetes에-애플리케이션-배포하기.md)
 
+- [Helm v2에서 v3로 마이그레이션 하기](./_posts/2019-12-25-Helm-v2-에서-v3-로-마이그레이션-하기.md)
+
 OpenStack
 ========================
 - [RDO로 간편하게 OpenStack 설치하기](https://kycfeel.github.io/2017/03/01/RDO로-간편하게-OpenStack-설치하기/)
