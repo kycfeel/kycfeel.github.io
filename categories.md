@@ -17,6 +17,8 @@ IoT
 ==========
 - [Homebridge로 미지원 IoT 기기 HomeKit 제어하기](https://kycfeel.github.io/2018/01/30/Homebridge로-미지원-IoT-기기-HomeKit-제어하기/)
 
+    - [Homebridge로 샤오미 공기청정기 HomeKit 제어하기](https://kycfeel.github.io/2020/10/10/Homebridge로-샤오미-공기청정기-HomeKit-제어하기/)
+
 HollaEx
 ==========
 - [HollaEx로 나만의 암호화폐 거래소 만들기](https://kycfeel.github.io/2019/10/31/HollaEx%EB%A1%9C-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90-%EA%B1%B0%EB%9E%98%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
@@ -31,8 +33,6 @@ Docker
 
 - [Docker Swarm으로 고래엮기](https://kycfeel.github.io/2017/03/27/Docker-Swarm으로-고래엮기/)
 
-- [Jenkins로 Docker 이미지 배포 자동화하기](https://kycfeel.github.io/2017/10/09/Jenkins로-Docker-이미지-배포-자동화하기/)
-
 - [Portainer를 통한 Docker 초점잡기](https://kycfeel.github.io/2017/12/31/Portainer를-통한-Docker-초점잡기/)
 
 - [Docker Swarm으로 프로덕션 아키텍처 세우기](https://kycfeel.github.io/2018/01/26/Docker-Swarm으로-프로덕션-아키텍처-세우기/)
@@ -41,7 +41,7 @@ Kubernetes
 ========================
 - [나도 Kubernetes 써보고 싶어요!](https://kycfeel.github.io/2018/08/02/나도-Kubernetes-써보고-싶어요/)
 
-- [스스로 Kubernetes 클러스터 구축하기](https://kycfeel.github.io/2018/10/14/스스로-Kubernetes-클러스터-구축하기/)
+- [Kubeadm을 통해 스스로 Kubernetes 클러스터 구축하기](https://kycfeel.github.io/2018/10/14/스스로-Kubernetes-클러스터-구축하기/)
 
 - [eksctl로 구축하는 AWS EKS Kubernetes 클러스터](./_posts/2019-03-21-eksctl로-구축하는-aws-eks-kubernetes-클러스터.md)
 
