@@ -12,7 +12,7 @@ AWS 같이 프리 티어라고 완전히 저사양 서비스만 제공하는 것
 
 Oracle Cloud에 빠르게 회원가입을 한 후, Compute - Instances 탭에서 새 가상 인스턴스를 생성할 수 있다. 
 
-![os_to_ubuntu](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/os_to_ubutnu.png?raw=true)
+![os_to_ubuntu](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/os_to_ubuntu.png?raw=true)
 
 먼저 OS부터 지정해 보자. "Always Free-eligible"에 해당되는 이미지 중 어떤 것을 골라도 비용은 청구되지 않지만, 우리는 빠른 VPN 서버의 구축을 위해 Ubuntu를 선택하자.
 
@@ -86,7 +86,7 @@ pivpn -qr
 
 QR코드를 스캔해 VPN 설정을 추가하고 나면 위와 같이 쉽게 연결할 수 있다.
 
-![pivpn-wireguard-ip-changed](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-ip-change.PNG?raw=true)
+![pivpn-wireguard-ip-changed](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-ip-changed.PNG?raw=true)
 
 마지막으로 내 IP 주소가 정상적으로 변경되었는지 확인 한번만 해주자.
 
