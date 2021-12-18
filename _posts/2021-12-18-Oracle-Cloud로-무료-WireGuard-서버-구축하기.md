@@ -12,21 +12,21 @@ AWS 같이 프리 티어라고 완전히 저사양 서비스만 제공하는 것
 
 Oracle Cloud에 빠르게 회원가입을 한 후, Compute - Instances 탭에서 새 가상 인스턴스를 생성할 수 있다. 
 
-![os_to_ubuntu](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/os_to_ubutnu?raw=true)
+![os_to_ubuntu](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/os_to_ubutnu.png?raw=true)
 
 먼저 OS부터 지정해 보자. "Always Free-eligible"에 해당되는 이미지 중 어떤 것을 골라도 비용은 청구되지 않지만, 우리는 빠른 VPN 서버의 구축을 위해 Ubuntu를 선택하자.
 
-![instance_spec_configuration](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/instance_spec_configuration?raw=true)
+![instance_spec_configuration](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/instance_spec_configuration.png?raw=true)
 
 이제 가장 중요한 사양 설정이 남아있다. 기본 설정인 AMD 인스턴스를 사용하면 겨우 1vCore에 1GB 사양만을 제공받지만, ARM 기반 인스턴스를 선택하면 최대 4vCore와 24GB RAM까지 할당받을 수 있다. 
 
-![instance_free_spec_limit_screenshot](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/instance_free_spec_limit_screenshot?raw=true)
+![instance_free_spec_limit_screenshot](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/instance_free_spec_limit_screenshot.png?raw=true)
 
 평생 무료 조건으로 제공받기에는 실로 엄청난 사양이 아닐 수 없다. 우리는 그냥 입 꾹 다물고, 감사합니다 하면서 받으면 된다.
 
 한번에 4vCore와 24GB를 할당하지 않고, 작은 사양으로 쪼개서 여러 인스턴스를 생성할 수도 있는 것으로 안다. 2vCore와 12GB RAM을 가진 인스턴스 2개를 생성하는 식으로 말이다. 고로 필요에 맞게 사양을 지정해 주자. 필자는 오직 VPN 용도로만 Oracle Cloud를 사용할 예정이기에, 한번에 4vCore와 24GB RAM을 몰빵했다.
 
-![instance_configuration_done](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/instance_configuration_done?raw=true)
+![instance_configuration_done](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/instance_configuration_done.png?raw=true)
 
 설정을 마무리하고 인스턴스를 생성하면 위와 같이 접속에 필요한 공인 IP와 계정 이름 등이 보일 것이다. 인스턴스 생성 중 추가한 PEM 키와 함께 SSH 접속을 해보자.
 
@@ -82,11 +82,11 @@ pivpn -a
 pivpn -qr
 ```
 
-![pivpn-wireguard-mobile-connected](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-mobile-connected.png?raw=true)
+![pivpn-wireguard-mobile-connected](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-mobile-connected.PNG?raw=true)
 
 QR코드를 스캔해 VPN 설정을 추가하고 나면 위와 같이 쉽게 연결할 수 있다.
 
-![pivpn-wireguard-ip-changed](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-ip-change.png?raw=true)
+![pivpn-wireguard-ip-changed](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-ip-change.PNG?raw=true)
 
 마지막으로 내 IP 주소가 정상적으로 변경되었는지 확인 한번만 해주자.
 
