@@ -34,9 +34,7 @@ Oracle Cloud에 빠르게 회원가입을 한 후, Compute - Instances 탭에서
 ssh -i <PEM_KEY_경로> ubuntu@<내_인스턴스_공인_IP>
 ```
 
-정상적으로 접속된다면 아래와 같이 쉘 메인 화면이 보일 것이다.
-
-![shell_connected](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/shell_connected?raw=true)
+정상적으로 접속된다면 다음으로 진행해 보자.
 
 # OpenVPN 서버 설정하기
 
