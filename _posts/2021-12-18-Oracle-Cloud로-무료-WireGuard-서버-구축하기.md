@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Oracle Cloud로 무료 WireGuard 서버 구축하기"
-date:   2021-12-18 20:40:45 +0900
+title: "Oracle Cloud로 무료 WireGuard 서버 구축하기"
+date: 2021-12-18 20:40:45 +0900
 categories: General DevOps
 ---
 
