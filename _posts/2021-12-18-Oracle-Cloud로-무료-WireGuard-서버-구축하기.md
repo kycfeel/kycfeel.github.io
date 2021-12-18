@@ -56,11 +56,11 @@ curl -L https://install.pivpn.io | bash
 
 설치 과정 중 복잡한 내용은 없다. OpenVPN과 WireGuard중 사용하고 싶은 걸 선택하고 (이 글에서는 WireGuard를 사용), 내가 VPN에 사용할 DNS 정보나, OpenVPN이 사용할 포트 등을 지정해 주면 끝난다.
 
-![WireGuard-port-select](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/WireGuard-port-select?raw=true)
+![WireGuard-port-select](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/WireGuard-port-select.png?raw=true)
 
 Port는 기본으로 UDP 51820이 선택된다. 필요할 경우 변경해주자.
 
-![pivpn-unattended-upgrade](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-unattended-upgrade?raw=true)
+![pivpn-unattended-upgrade](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-unattended-upgrade.png?raw=true)
 
 설치 중간에 Debian의 Unattended Upgrade를 사용할 것이냐 물어본다. 만약 약간의 다운타임은 크게 문제 없이 넘길 수 있고, 항상 최선 버전을 유지하는 걸 중요하게 생각한다면 Yes를 눌러 켜 주는 걸 추천하고, 그게 아닌 대부분의 유저에게는 No를 눌러 허용하지 않는 걸 추천한다. 이론만 생각한다면 언제나 모든 패키지를 항상 최신으로 유지하는 게 가장 좋지만, 그만큼 예상하지 못했던 호환성 문제 등을 경험할 수 있다. 특수한 경우가 아닌 이상 업데이트는 직접 관리해주는 걸 추천한다.
 
@@ -70,12 +70,12 @@ Port는 기본으로 UDP 51820이 선택된다. 필요할 경우 변경해주자
 pivpn -a
 ```
 
-![pivpn-wireguard-user-add](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-user-add?raw=true)
+![pivpn-wireguard-user-add](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-user-add.png?raw=true)
 
 간단히 사용할 유저네임만 입력하면 생성이 완료된다.
 
 
-![pivpn-wireguard-qr-code](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-qr-code?raw=true)
+![pivpn-wireguard-qr-code](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-qr-code.png?raw=true)
 
 
 재미있는 점은 계정이 생성된 이후에, QR코드를 통해 쉽게 모바일 기기에 추가할 수 있다는 점이다. 아래 명령어를 통해 QR코드를 생성해 보자.
@@ -88,7 +88,7 @@ pivpn -qr
 
 QR코드를 스캔해 VPN 설정을 추가하고 나면 위와 같이 쉽게 연결할 수 있다.
 
-![pivpn-wireguard-ip-changed](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-ip-change.pngㅔㅜㅎ?raw=true)
+![pivpn-wireguard-ip-changed](https://github.com/kycfeel/kycfeel.github.io/blob/master/_images/pivpn-wireguard-ip-change.png?raw=true)
 
 마지막으로 내 IP 주소가 정상적으로 변경되었는지 확인 한번만 해주자.
 
